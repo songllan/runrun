@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/sky-server/sql/sky.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/../../资料/总资料/资料/day01/数据库/sky.sql" dialect="MySQL" />
+  </component>
+</project>
