@@ -69,6 +69,7 @@
                 <version>${pagehelper}</version>
             </dependency>
 
+            <!--在pom.xml中添加依赖-->
             <dependency>
                 <groupId>com.github.xiaoymin</groupId>
                 <artifactId>knife4j-spring-boot-starter</artifactId>
@@ -93,11 +94,13 @@
                 <version>${jjwt}</version>
             </dependency>
 
+            <!--就算不导入HttpClient相关的坐标，也可以使用相关的API-->
             <dependency>
                 <groupId>com.aliyun.oss</groupId>
                 <artifactId>aliyun-sdk-oss</artifactId>
                 <version>${aliyun.sdk.oss}</version>
             </dependency>
+            <!--上述依赖的底层已经包含了HttpClient相关依赖-->
 
             <dependency>
                 <groupId>javax.xml.bind</groupId>

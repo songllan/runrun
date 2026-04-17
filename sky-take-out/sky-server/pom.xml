@@ -81,9 +81,11 @@
             <artifactId>aspectjweaver</artifactId>
         </dependency>
 
+        <!--在pom.xml中添加依赖-->
         <dependency>
             <groupId>com.github.xiaoymin</groupId>
             <artifactId>knife4j-spring-boot-starter</artifactId>
+            <version>${knife4j}</version>
         </dependency>
 
         <dependency>

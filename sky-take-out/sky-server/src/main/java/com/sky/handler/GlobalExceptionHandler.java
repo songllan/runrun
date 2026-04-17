@@ -21,10 +21,13 @@ public class GlobalExceptionHandler {
      * @param ex
      * @return
      */
-    @ExceptionHandler
-    public Result exceptionHandler(BaseException ex){
-        log.error("异常信息：{}", ex.getMessage());
-        return Result.error(ex.getMessage());
+    /**
+     * 处理所有未捕获的异常
+     */
+    @ExceptionHandler(Exception.class)
+    public Result handleAllException(Exception e) {
+        log.error("系统异常：", e);  // 注意：第二个参数传 e，这样才会打印完整堆栈
+        return Result.error("系统异常，请联系管理员");
     }
 
     /**
